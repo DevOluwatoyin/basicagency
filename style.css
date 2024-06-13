@@ -61,6 +61,40 @@ nav > ul {
   gap: 1rem;
 }
 
+/* nav > ul li {
+} */
+
+.relative {
+  background-color: purple;
+  color: white;
+  width: 200px;
+  height: 200px;
+  left: 20px;
+  position: absolute;
+  /* right, top, bottom */
+}
+
+.absolute {
+  background-color: black;
+  position: absolute;
+  /* z-index: -1; */
+}
+
+.static {
+  background: red;
+  margin-left: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+nav > ul li::before {
+  content: "";
+  z-index: 2;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
 .header-video {
   width: 100%;
   object-fit: cover;
